@@ -16,7 +16,8 @@
 <img src="https://img.shields.io/github/stars/notcandy001/moonveil?style=for-the-badge&logo=starship&color=AB6C6A&logoColor=D9E0EE&labelColor=252733" />
 
 <a href="https://github.com/notcandy001/moonveil">
-  <img src="https://img.shields.io/github/repo-size/notcandy001/moonveil?style=for-the-badge&label=SIZE&color=DDBB88&logo=codesandbox&logoColor=D9E0EE&labelColor=252733" />
+  <a href="https://github.com/notcandy001/crescentshell/tree/master">
+  <img src="https://img.shields.io/badge/shell-development-8D748C?style=for-the-badge&logo=gnubash&logoColor=D9E0EE&labelColor=252733" />
 </a>
 <br>
 
