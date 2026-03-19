@@ -78,15 +78,7 @@
 
 ---
 
-<h2>
-<sub>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Package.png"
-     width="25" height="25"/>
-</sub>
-Installation
-</h2>
-
- ### Get Moonveil
+### Get Moonveil Now 
 
 ```bash
 curl -L get.roderic.me/moonveil | sh
