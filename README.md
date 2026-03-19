@@ -78,23 +78,10 @@
 
 ---
 
-<h2>
-<sub>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Package.png"
-     width="25" height="25"/>
-</sub>
-Installation
-</h2>
-
- ### Arch (only)
+### Get Moonveil Now 
 
 ```bash
-bash <(curl -sL https://moonveil-web.vercel.app/dots/stable/arch) #arch only
-```
- ### Debian & ubuntu based OS (only)
-
-```bash
-bash <(curl -sL https://moonveil-web.vercel.app/dots/stable/debian) 
+curl -L get.roderic.me/moonveil | sh
 ```
 
 
@@ -197,12 +184,12 @@ Install the following packages for the setup to work as intended.
 - [x] SwayNC
 - [x] Wlogout
 - [x] Calendar
-- [x] Clipboard Manager
-- [x] Emoji Picker
 - [x] Color Picker
 - [x] Customizable UI
 - [x] More polish
 - [x] Better scripts
+- [ ] Clipboard Manager
+- [ ] Emoji Picker
 - [ ] Additional themes
 - [ ] Documentation improvements
 
