@@ -40,9 +40,9 @@ Scope {
 
                 // Attached to screen edge, pushes windows away
                 exclusionMode: ExclusionMode.Normal
-                exclusiveZone: 48
+                exclusiveZone: 44
 
-                implicitWidth: 48
+                implicitWidth: 44
                 color: "transparent"
 
                 WlrLayershell.namespace: "crescentshell:verticalBar"
