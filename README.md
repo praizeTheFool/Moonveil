@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/notcandy001/Moonveil">
-    <img src="https://github.com/notcandy001/Moonveil-asset/blob/main/cover.png" alt="Moonveil" width="60%" />
+    <img src="https://github.com/notcandy001/Moonveil-asset/blob/main/cover.png" alt="Moonveil" width="100%" />
   </a>
   <br><br>
   A <i><b>quiet</b></i>, moonlit Hyprland environment.
@@ -99,11 +99,11 @@ If you are having trouble or have any questions:
 ## Credits
 
 - [outfoxxed](https://outfoxxed.me/) for creating Quickshell and the great documentation!
-- [end-4](https://github.com/end-4) for his awesome dots-hyprland project. *(And yes, I yoinked a lot of code and GUI from it. 😅)*
-- [Rexcrazy804](https://github.com/Rexcrazy804) for the barcode lockscreen idea from [Zaphkiel](https://github.com/Rexcrazy804/Zaphkiel).
-- [aadritobasu](https://github.com/aadritobasu) for Akaris Jsonc components.
-- **Nisa** — for being the kind of friend who actually listens to all my delusional ideas, helped me fix things, add features, and taught me how stuff works. This whole thing wouldn’t exist without those late night conversations. 🌙
-- And you, the guys, for trying out Moonveil! 
+- [end-4](https://github.com/end-4) for his awesome work. *(And yes, I yoinked a lot of code and GUI from it for quickshell only . 😅)*
+- [Rexcrazy804](https://github.com/Rexcrazy804) for the barcode lockscreen idea.
+ Akaris Jsonc components.
+- **Nisa**  for being the kind of friend who actually listens to all my delusional ideas, helped me fix things, add features, and taught me how stuff works. This whole thing wouldn’t exist without those late night conversations. Thanks :D
+- And you guys, for trying out Moonveil! 
 
 -----
 
