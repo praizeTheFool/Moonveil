@@ -25,7 +25,7 @@ Rectangle {
 
     // Cava
     property var cavaBars: []
-    property int cavaBarCount: 20
+    property int cavaBarCount: 16
     readonly property bool mediaPlaying: {
         const p = MprisController.activePlayer
         return p !== null && p.playbackState === MprisPlaybackState.Playing
@@ -168,17 +168,17 @@ Rectangle {
             Row {
                 id: barsRow
                 anchors.verticalCenter: parent.verticalCenter
-                spacing: 2
-                height: root.collapsedHeight - 12
+                spacing: 1
+                height: root.collapsedHeight - 10
                 width: parent.width - 44
 
                 Repeater {
                     model: root.cavaBarCount
                     delegate: Rectangle {
                         required property int index
-                        width: (barsRow.width - (root.cavaBarCount - 1) * 2) / root.cavaBarCount
-                        radius: width / 2
-                        height: Math.max(width,
+                        width: Math.max(1, (barsRow.width - (root.cavaBarCount - 1) * 1) / root.cavaBarCount)
+                        radius: 2
+                        height: Math.max(3,
                             (root.cavaBars[index] ?? 0) / 100 * (barsRow.height))
                         anchors.bottom: parent.bottom
                         color: Appearance.colors.colPrimary

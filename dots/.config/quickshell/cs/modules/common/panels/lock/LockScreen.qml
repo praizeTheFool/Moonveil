@@ -117,9 +117,18 @@ Scope {
     GlobalShortcut {
         name: "lock"
         description: "Locks the screen"
+        onPressed: root.lock()
+    }
 
-        onPressed: {
-            root.lock()
+    // loginctl lock-session support via dbus
+    Process {
+        id: logindWatcher
+        command: ["bash", "-c", "dbus-monitor --system 2>/dev/null"]
+        running: true
+        stdout: SplitParser {
+            onRead: data => {
+                if (data.includes("member=Lock")) root.lock()
+            }
         }
     }
 
