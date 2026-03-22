@@ -1,5 +1,4 @@
 module qs.services
-singleton Ai 1.0 Ai.qml
 singleton AppSearch 1.0 AppSearch.qml
 singleton Audio 1.0 Audio.qml
 singleton Battery 1.0 Battery.qml

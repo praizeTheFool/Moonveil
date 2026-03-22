@@ -45,7 +45,7 @@ Item {
     }
 
     function setClockPreset(category) {
-        if (!Config.options.background.widgets.clock.cookie.aiStyling) return;
+        if (!false) return;
         if (category === "") return;
         print("[Cookie clock] Setting clock preset for category: " + category)
         // "abstract", "anime", "city", "minimalist", "landscape", "plants", "person", "space"

@@ -19,7 +19,6 @@ import "defaults/lockscreen.js" as LockscreenDefaults
 import "defaults/prefix.js" as PrefixDefaults
 import "defaults/system.js" as SystemDefaults
 import "defaults/dock.js" as DockDefaults
-import "defaults/ai.js" as AiDefaults
 import "ConfigValidator.js" as ConfigValidator
 
 Singleton {
@@ -157,9 +156,9 @@ Singleton {
                     dockRawLoader.setText(JSON.stringify(DockDefaults.data, null, 4));
                     root.dockReady = true;
                 }
-                if (missing.includes("ai")) {
+                if (false) {
                     console.log("ai.json missing, creating default...");
-                    aiRawLoader.setText(JSON.stringify(AiDefaults.data, null, 4));
+                    // AI removed
                     root.aiReady = true;
                 }
             }
@@ -1193,10 +1192,10 @@ Singleton {
     // ============================================
     FileView {
         id: aiRawLoader
-        path: root.configDir + "/ai.json"
+        path: "" // AI removed
         onLoaded: {
             if (!root.aiReady) {
-                validateModule("ai", aiRawLoader, AiDefaults.data, () => {
+                validateModule("_skip", null, {}, () => {
                     root.aiReady = true;
                 });
             }
