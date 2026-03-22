@@ -157,7 +157,13 @@ Scope {
         description: "Toggles search on press"
 
         onPressed: {
-            GlobalStates.overviewOpen = !GlobalStates.overviewOpen;
+            if (!GlobalStates.overviewOpen) {
+                overviewScope.dontAutoCancelSearch = true;
+                GlobalStates.overviewOpen = true;
+                if (searchWidget) searchWidget.focusSearchInput();
+            } else {
+                GlobalStates.overviewOpen = false;
+            }
         }
     }
     GlobalShortcut {
@@ -173,6 +179,10 @@ Scope {
         description: "Toggles overview on press"
 
         onPressed: {
+            if (!GlobalStates.overviewOpen) {
+                overviewScope.dontAutoCancelSearch = false;
+                if (searchWidget) searchWidget.cancelSearch();
+            }
             GlobalStates.overviewOpen = !GlobalStates.overviewOpen;
         }
     }
