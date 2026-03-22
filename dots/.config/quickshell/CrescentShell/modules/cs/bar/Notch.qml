@@ -77,7 +77,7 @@ Rectangle {
         var base = 160
         var textWidth = titleText.implicitWidth
         var calculated = base + textWidth
-        return Math.min(Math.max(calculated, 240), screen.width * 0.7)
+        return Math.min(Math.max(calculated, 240), 600)
     }
 
     height: mode === "idle" ? collapsedHeight : expandedHeight
@@ -127,9 +127,10 @@ Rectangle {
             Text {
                 id: titleText
                 text: root.cleanTitle
-                color: Appearance.colors.colPrimary
+                color: "#ffffff"
                 font.pixelSize: 14
                 elide: Text.ElideRight
+                width: Math.min(implicitWidth, 300)
                 verticalAlignment: Text.AlignVCenter
                 height: parent.height
             }

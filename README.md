@@ -1,203 +1,103 @@
 <p align="center">
   <a href="https://github.com/notcandy001/Moonveil">
-     <img src="https://github.com/notcandy001/Moonveil-asset/blob/main/cover.png" alt="Moonveil cover">
+    <img src="https://github.com/notcandy001/Moonveil-asset/blob/main/cover.png" alt="Moonveil" width="100%" />
   </a>
-  
-  <h3 align="center">
-  🌙 A quiet, moonlit Hyprland environment
-</h3>
-
+  <br><br>
+  A <i><b>quiet</b></i>, moonlit Hyprland environment.
 </p>
-
 
 <p align="center">
- <img src="https://img.shields.io/github/last-commit/notcandy001/moonveil?&style=for-the-badge&color=8D748C&logoColor=D9E0EE&labelColor=252733" />
-
-<img src="https://img.shields.io/github/stars/notcandy001/moonveil?style=for-the-badge&logo=starship&color=AB6C6A&logoColor=D9E0EE&labelColor=252733" />
-
-<a href="https://github.com/notcandy001/moonveil">
-  <a href="https://github.com/notcandy001/crescentshell/tree/master">
-  <img src="https://img.shields.io/badge/shell-development-8D748C?style=for-the-badge&logo=gnubash&logoColor=D9E0EE&labelColor=252733" />
-</a>
-<br>
-
-<a href="https://github.com/notcandy001/moonveil/blob/main/LICENSE">
-  <img src="https://img.shields.io/github/license/notcandy001/moonveil?style=for-the-badge&color=A1C999&logo=opensourceinitiative&logoColor=D9E0EE&labelColor=252733" />
-</a>
-
-<a href="https://github.com/notcandy001/moonveil/issues">
-  <img src="https://img.shields.io/github/issues/notcandy001/moonveil?style=for-the-badge&logo=bilibili&color=5E81AC&logoColor=D9E0EE&labelColor=252733" />
-</a>
-</br>
-
+  <a href="https://github.com/notcandy001/moonveil/stargazers">
+    <img src="https://img.shields.io/github/stars/notcandy001/moonveil?style=for-the-badge&logo=github&color=8D748C&logoColor=D9E0EE&labelColor=000000" alt="GitHub stars">
+  </a>
+  <a href="https://github.com/notcandy001/moonveil/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/notcandy001/moonveil?style=for-the-badge&color=A1C999&logo=opensourceinitiative&logoColor=D9E0EE&labelColor=000000" alt="License">
+  </a>
+  <a href="https://github.com/notcandy001/moonveil/issues">
+    <img src="https://img.shields.io/github/issues/notcandy001/moonveil?style=for-the-badge&logo=bilibili&color=5E81AC&logoColor=D9E0EE&labelColor=000000" alt="Issues">
+  </a>
+  <a href="https://github.com/notcandy001/crescentshell">
+    <img src="https://img.shields.io/badge/shell-CrescentShell-AB6C6A?style=for-the-badge&logo=gnubash&logoColor=D9E0EE&labelColor=000000" alt="CrescentShell">
+  </a>
 </p>
 
-<h4 align="center">
-  <a href="https://github.com/notcandy001/my-wal">Wallpaper collection</a>
-</h4>
+<p align="center">
+  <a href="https://github.com/notcandy001/my-wal">
+    <img src="https://img.shields.io/badge/🖼️_Wallpaper_Collection-click_here-8D748C?style=for-the-badge&labelColor=000000" alt="Wallpapers">
+  </a>
+</p>
 
+-----
 
-> [!CAUTION]
-> **Matugen is required.**  
-> Moonveil relies on dynamic color generation and will not function correctly without it.
-
-<h2 align="center">✨ Features</h2>
-
-- Clean, distraction free layout
-- Poetic and minimal design language
-- Subtle, smooth animations
-- Matugen powered dynamic colors
-- Carefully tuned keybindings
-- Easy to extend and customize
-
----
-
-<h2>
-  <sub>
-    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Camera%20with%20Flash.png" width="32" height="32" />
-  </sub>
-  Screenshots
-</h2>
+<h2><sub><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Camera%20with%20Flash.png" width="32" height="32" /></sub> Screenshots</h2>
 
 <div align="center">
   <img src="https://github.com/notcandy001/Moonveil-asset/blob/main/1.png" width="100%" />
-
-  
-
+  <br/><br/>
   <img src="https://github.com/notcandy001/Moonveil-asset/blob/main/2.png" width="32%" />
   <img src="https://github.com/notcandy001/Moonveil-asset/blob/main/3.png" width="32%" />
   <img src="https://github.com/notcandy001/Moonveil-asset/blob/main/4.png" width="32%" />
-
-  
-
+  <br/>
   <img src="https://github.com/notcandy001/Moonveil-asset/blob/main/5.png" width="32%" />
   <img src="https://github.com/notcandy001/Moonveil-asset/blob/main/7.png" width="32%" />
   <img src="https://github.com/notcandy001/Moonveil-asset/blob/main/8.png" width="32%" />
-
 </div>
 
----
+-----
 
-### Get Moonveil Now 
+<h2><sub><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Package.png" width="32" height="32" /></sub> Installation</h2>
 
 ```bash
 curl -L get.roderic.me/moonveil | sh
 ```
 
+> [!IMPORTANT]
+> The only pre-requisite is having **Arch Linux** installed.
 
+> [!NOTE]
+> After installation run `fc-cache -fv` to load the fonts properly.
 
-## Required Packages
+-----
 
-<details>
-<summary>📦 Dependencies</summary>
+<h2><sub><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Activity/Sparkles.webp" width="32" height="32" /></sub> Features</h2>
 
-Moonveil relies on a small, intentional set of tools.  
-Install the following packages for the setup to work as intended.
+- [x] Matugen powered dynamic colors 
+- [x] **CrescentShell**  
+- [x] Floating notch
+- [x] Cava music visualizer in the notch
+- [x] Barcode lockscreen 
+- [x] Power profile switcher
+- [x] Wallpaper manager 
+- [x] App launcher and workspace overview
+- [x] Notification center
+- [x] Control center with quick toggles
+- [x] Media controls
+- [x] Bluetooth and Wi-Fi management
+- [x] Volume and brightness sliders
+- [x] Screenshot and screen region capture
+- [x] Calendar and todo widget
+- [x] Smooth animations throughout
+- [x] Customizable keybindings
+- [ ] Clipboard manager
+- [ ] Emoji picker
+- [ ] Dashboard widget
 
-## 📦 Pacman Packages
-### Core
-- **Hyprland** – Wayland compositor
-- **Waybar** – Status bar
-- **Rofi** – Application launcher
-- **Hyprlock** – Lock screen
-- **Wlogout** – Logout / power menu
-- **SwayNC** – Notification center
-- **gnome-bluetooth-3.0**
-- **vte3**
-- **imagemagick**
+-----
 
-### Shell & CLI
-- **Zsh** – Default shell
-- **power-profiles-daemon**
+## I need help!
 
-### Utilities
-- **Grim** – Screenshot utility
-- **Nautilus** – File manager
-- **Pavucontrol** – Audio control
+If you are having trouble or have any questions:
 
-### Theming & Appearance
-- **LXAppearance** – GTK theme manager
+- Open an issue on the [GitHub repository](https://github.com/notcandy001/Moonveil/issues).
+- The main configuration is located at `~/.config/quickshell/CrescentShell`.
 
-### Python Dependencies
-- **python**
-- **python-gobject**
-- **python-psutil**
-- **python-watchdog**
-- **python-pillow**
-- **python-toml**
-- **python-ijson**
-- **python-numpy**
-- **python-requests**
+-----
 
-### Fonts
-- **JetBrainsMono Nerd Font**
-- **Noto Fonts Emoji**
-- **Noto Fonts CJK**
+## Credits
 
----
+- [outfoxxed](https://outfoxxed.me/) for creating Quickshell and the great documentation!
+- [end-4](https://github.com/end-4) for his awesome work. *(And yes, I yoinked a lot of code and GUI from it for the Quickshell side. 😅)*
+- [Rexcrazy804](https://github.com/Rexcrazy804) for the barcode lockscreen idea.
+- **Nisa** for being the kind of friend who actually listens to all my delusional ideas, helped me fix things, add features, and taught me how stuff works. This whole thing wouldn’t exist without those late night conversations. Thanks :D
+- And you guys, for trying out Moonveil! 
 
-## 📦 Yay (AUR) Packages
-
-### Core
-- **Matugen** – Dynamic color generation (**required**)
-- **python-fabric-git**
-- **fabric-cli**
-- **python-setproctitle**
-- **gray**
-
-### Shell & CLI
-- **Oh My Zsh** – Zsh framework
-- **Powerlevel10k** – Zsh prompt theme
-- **Eza** – Modern `ls` replacement
-
-### Theming & Appearance
-- **adw-gtk-theme** – GTK theme
-- **Bibata Modern Ice** – Cursor theme
-
-### Fonts
-- **Geist Mono (OTF)** – Primary UI & terminal font
-- **Geist Mono Nerd Font** – Icon support
-- **PP Neue Machina** – Display / clock font
-
----
-
-## 📝 Notes
-- Run `fc-cache -fv` after installing fonts
-- **PP Neue Machina** may require manual installation
-- **Matugen** should be integrated with Hyprland, Waybar, GTK & Rofi
-
-
-### Package Management
-- **yay** – AUR helper  
-
-> ⚠️ Without **Matugen**, colors and accents will not update dynamically.
-
-</details>
-
----
-<h2><sub><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="25" height="25" /></sub> Roadmap</h2>
-
-- [x] Hyprland
-- [x] Hyprlock
-- [x] Rofi
-- [x] Waybar
-- [x] SwayNC
-- [x] Wlogout
-- [x] Calendar
-- [x] Color Picker
-- [x] Customizable UI
-- [x] More polish
-- [x] Better scripts
-- [ ] Clipboard Manager
-- [ ] Emoji Picker
-- [ ] Additional themes
-- [ ] Documentation improvements
-
-
-## Special Thanks to
-
-- **[Hyprland Community](https://github.com/hyprwm)** Thanks to the Hyprland maintainers and contributors for creating and maintaining an outstanding Wayland compositor.
-
-- **[Wayland Contributors](https://wayland.freedesktop.org)** Appreciation to the Wayland developers and contributors for providing the foundation for modern Linux desktops.
-
--  **[aadritobasu](https://github.com/aadritobasu)** Huge thanks for Akaris Jsonc I’ve yanked parts of it.
