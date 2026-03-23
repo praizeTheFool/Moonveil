@@ -8,16 +8,16 @@
 
 <p align="center">
   <a href="https://github.com/notcandy001/moonveil/stargazers">
-    <img src="https://img.shields.io/github/stars/notcandy001/moonveil?style=for-the-badge&logo=starship&color=9BB8D3&logoColor=D9E0EE&labelColor=252733" />
+    <img src="https://img.shields.io/github/stars/notcandy001/moonveil?style=for-the-badge&logo=starship&color=9BB8D3&logoColor=D9E0EE&labelColor=000000" />
   </a>
   <a href="https://github.com/notcandy001/moonveil/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/notcandy001/moonveil?style=for-the-badge&color=A1C999&logo=opensourceinitiative&logoColor=D9E0EE&labelColor=000000" alt="License">
+    <img src="https://img.shields.io/github/license/notcandy001/moonveil?style=for-the-badge&color=5E81AC&logo=opensourceinitiative&logoColor=D9E0EE&labelColor=000000" alt="License">
   </a>
   <a href="https://github.com/notcandy001/moonveil/issues">
     <img src="https://img.shields.io/github/issues/notcandy001/moonveil?style=for-the-badge&logo=bilibili&color=5E81AC&logoColor=D9E0EE&labelColor=000000" alt="Issues">
   </a>
   <a href="https://github.com/notcandy001/crescentshell">
-    <img src="https://img.shields.io/badge/shell-CrescentShell-AB6C6A?style=for-the-badge&logo=gnubash&logoColor=D9E0EE&labelColor=000000" alt="CrescentShell">
+    <img src="https://img.shields.io/badge/shell-CrescentShell-AB6C6A?style=for-the-badge&logo=gnubash&logoColor=5E81AC&labelColor=000000" alt="CrescentShell">
   </a>
 </p>
 
