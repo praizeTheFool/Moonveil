@@ -4,7 +4,7 @@ Welcome! Thanks for your interest in contributing to **Moonveil** a modern, cust
 
 This guide will help you get started quickly.
 
----
+
 
 ##  Project Structure
 
@@ -15,13 +15,12 @@ moonveil/
 │       └── Crescentshell/   # UI (bar, notch, dashboard)
 ├── dots/
 │   └── .config/             # System configs
-├── installer/               # Install scripts
+├── get/               # Install scripts
 └── .local/
 ```
 
----
 
-## 🌿 Branching Strategy
+## Branching Strategy
 
 Moonveil uses the following branches:
 
@@ -30,15 +29,13 @@ Moonveil uses the following branches:
 
 👉 All contributions must target **playground**
 
----
-
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Fork the Repository
 
 Click **Fork** on GitHub.
 
----
+
 
 ### 2. Clone Your Fork
 
@@ -47,15 +44,11 @@ git clone https://github.com/your-username/moonveil.git
 cd moonveil
 ```
 
----
-
 ### 3. Create a New Branch
 
 ```bash
 git checkout -b feature/your-feature-name
 ```
-
----
 
 ### 4. Workflow
 
@@ -67,8 +60,6 @@ git push origin feature/your-feature-name
 
 Then open a **Pull Request → target `playground`**
 
----
-
 ## Commit Style
 
 Use consistent commit messages:
@@ -79,16 +70,12 @@ Use consistent commit messages:
 - `docs:` → Documentation  
 - `refactor:` → Code cleanup  
 
----
-
 ## Pull Request Rules
 
 - Target **`playground`**
 - Keep PRs **focused and small**
 - Add **screenshots** for UI changes
 - Do **not break existing features**
-
----
 
 ##  What You Can Work On
 
@@ -105,8 +92,6 @@ You’re free to build anything.
 
 Small changes, big features, random ideas everything is welcome.
 
----
-
 ### No limits
 
 You don’t have to follow a fixed list.
@@ -116,8 +101,6 @@ If you think:
 
 Just build it and open a PR.
 
----
-
 ## Style
 
 - Don’t wait for permission
@@ -126,48 +109,34 @@ Just build it and open a PR.
 
 Even if it’s not perfect we can refine it together.
 
----
-
 ### Core Features to work on 
 - Dashboard UI
 - Emoji Picker
 - Clipboard Manager
-
----
 
 ### UI / UX
 - Settings app refinement
 - Improve spacing & layout
 - Better animations
 
----
-
 ### Improvements
 - Performance optimizations
 - Installer improvements
 - Code cleanup
 
----
-
 ## Issues
 
 - feel free to **open your issue**.
-
----
 
 ## 💬 Need Help?
 
 Open an issue no problem at all.
 
----
-
 ## Rules
 
-- ❌ Don’t push to `master`
-- ✅ Keep code clean
-- ✅ Follow project style
-
----
+- Don’t push to `master`
+- Keep code clean
+- Follow project style
 
 ## Final Note
 
