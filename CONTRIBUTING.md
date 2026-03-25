@@ -1,6 +1,6 @@
 # Contributing to Moonveil
 
-Welcome! Thanks for your interest in contributing to **Moonveil** — a modern, customizable Hyprland + QuickShell environment.
+Welcome! Thanks for your interest in contributing to **Moonveil** a modern, customizable Hyprland + QuickShell environment.
 
 This guide will help you get started quickly.
 
