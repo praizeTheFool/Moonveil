@@ -42,7 +42,7 @@ echo -e "${RESET}"
 echo -e "${DIM}  https://github.com/notcandy001/moonveil${RESET}\n"
 sleep 1
 
-#---------------- Safety Checks ----------------#
+#---------------- Safety ----------------#
 
 if [ "$(id -u)" -eq 0 ]; then
   whiptail --msgbox "Do NOT run as root." $H $W
@@ -59,72 +59,47 @@ if ! command -v whiptail &>/dev/null; then
 fi
 
 sudo -v || {
-  whiptail --msgbox "Sudo authentication failed." $H $W
+  whiptail --msgbox "Sudo failed." $H $W
   exit 1
 }
 
 #---------------- Welcome ----------------#
 
-whiptail --title " Moonveil Installer" --yesno \
-"Welcome to Moonveil installer!
+whiptail --yesno "Install Moonveil?" $H $W || exit 0
 
-This will install everything needed.
+#---------------- AUR ----------------#
 
-Continue?" $H $W || exit 0
+AUR="yay"
+AUR_REPO="https://aur.archlinux.org/yay-bin.git"
 
-#---------------- AUR Selection ----------------#
+#---------------- Update ----------------#
 
-AUR_CHOICE=$(whiptail --menu "Choose AUR helper" $H $W 2 \
-"1" "yay (recommended)" \
-"2" "paru" \
-3>&1 1>&2 2>&3)
+sudo pacman -Syu --noconfirm
 
-if [ "$AUR_CHOICE" = "2" ]; then
-  AUR="paru"
-  AUR_REPO="https://aur.archlinux.org/paru-bin.git"
-else
-  AUR="yay"
-  AUR_REPO="https://aur.archlinux.org/yay-bin.git"
-fi
+#---------------- Core ----------------#
 
-#---------------- System Update ----------------#
-
-whiptail --infobox "Updating system..." 8 $W
-sudo pacman -Syu --noconfirm 2>&1 | tee "$TMP_LOG"
-
-#---------------- Core Dependencies ----------------#
-
-whiptail --infobox "Installing core dependencies..." 8 $W
 sudo pacman -S --needed --noconfirm \
 base-devel git curl wget unzip zsh \
 networkmanager network-manager-applet nm-connection-editor \
-power-profiles-daemon upower fastfetch \
-2>&1 | tee "$TMP_LOG"
+power-profiles-daemon upower fastfetch
 
 sudo systemctl enable -now NetworkManager 2>/dev/null || true
-sudo systemctl enable -now power-profiles-daemon 2>/dev/null || true
 
 #---------------- AUR Install ----------------#
 
-if command -v "$AUR" &>/dev/null; then
-  success "$AUR already installed"
-else
-  tmpdir=$(mktemp -d)
-  git clone --depth=1 "$AUR_REPO" "$tmpdir/$AUR" 2>&1 | tee "$TMP_LOG"
-  cd "$tmpdir/$AUR"
-
-  makepkg -si --noconfirm --needed 2>&1 | tee "$TMP_LOG" | \
-    whiptail --title "Installing $AUR" --textbox /dev/stdin 20 $W
-
+if ! command -v yay &>/dev/null; then
+  tmp=$(mktemp -d)
+  git clone "$AUR_REPO" "$tmp/yay"
+  cd "$tmp/yay"
+  makepkg -si --noconfirm
   cd -
-  rm -rf "$tmpdir"
-  success "$AUR installed"
+  rm -rf "$tmp"
 fi
 
-#---------------- Package Install ----------------#
+#---------------- PACKAGE INSTALL (FIXED) ----------------#
 
 (
-"$AUR" -S --needed --noconfirm \
+yay -S --needed --noconfirm \
 hyprland xdg-desktop-portal-hyprland \
 quickshell-git \
 grim slurp wl-clipboard hyprpicker \
@@ -137,58 +112,58 @@ noto-fonts-emoji otf-geist-mono \
 ttf-geist-mono-nerd otf-geist-mono-nerd otf-codenewroman-nerd \
 ttf-libre-barcode eza
 ) 2>&1 | tee "$TMP_LOG" | \
-whiptail --title " Installing Packages" --textbox /dev/stdin 20 $W
+whiptail --title "Installing Packages" --textbox /dev/stdin 20 $W
 
-success "All packages installed"
+success "Packages installed"
 
-#---------------- Clone Repo ----------------#
+#---------------- Clone ----------------#
 
-MOONVEIL_DIR="$HOME/moonveil"
-
-if [ -d "$MOONVEIL_DIR/.git" ]; then
-  git -C "$MOONVEIL_DIR" pull
-else
-  git clone https://github.com/notcandy001/moonveil.git "$MOONVEIL_DIR"
-fi
+git clone https://github.com/notcandy001/moonveil.git "$HOME/moonveil" || true
 
 #---------------- Dotfiles ----------------#
 
-mkdir -p "$HOME/.config" "$HOME/.local/bin"
+cp -r "$HOME/moonveil/dots/.config/"* "$HOME/.config/" 2>/dev/null || true
+cp -r "$HOME/moonveil/dots/.local/"* "$HOME/.local/" 2>/dev/null || 
 
-cp -r "$MOONVEIL_DIR/dots/.config/"* "$HOME/.config/" 2>/dev/null || true
-cp -r "$MOONVEIL_DIR/dots/.local/"* "$HOME/.local/" 2>/dev/null || true
+#---------------- DONE ----------------#
 
-chmod +x "$HOME/.local/bin/"* 2>/dev/null || true
-
-success "Dotfiles deployed"
-
-#---------------- Final Screen ----------------#
-
-whiptail --title " Installation Complete!" --msgbox \
+whiptail --title "🌙 Installation Complete!" --msgbox \
 "Moonveil has been installed successfully!
 
+📁 Locations:
 Moonveil     →  ~/moonveil
-Wallpapers   →  ~/wallpaper
+Dotfiles     →  ~/.config & ~/.local
 Backup       →  ~/.moonveil-backup-*
-Shell        →  CrescentShell
+Wallpapers   →  ~/wallpaper
 
-Quick keybinds:
-Super + A          Control center
-Super + N          Notifications
-Super + R          App launcher
-Super + Tab        Overview
-Super + L          Lock screen
-Super + I          Settings
+🖥 Environment:
+Shell        →  CrescentShell (QuickShell)
 
-Log out and back in to apply all changes." 20 70
+⌨ Keybinds:
+Super + A    →  Control Center
+Super + N    →  Notifications
+Super + R    →  App Launcher
+Super + Tab  →  Overview
+Super + L    →  Lock Screen
+Super + I    →  Settings
+
+⚠ Important:
+Log out and log back in to apply all changes." 20 70
 
 clear
 echo -e "${PURPLE}${BOLD}"
-cat << 'EOF'
+cat << "EOF"
 
-Installation Complete! 
+███╗   ███╗ ██████╗  ██████╗ ███╗   ██╗██╗   ██╗███████╗██╗██╗
+████╗ ████║██╔═══██╗██╔═══██╗████╗  ██║██║   ██║██╔════╝██║██║
+██╔████╔██║██║   ██║██║   ██║██╔██╗ ██║██║   ██║█████╗  ██║██║
+██║╚██╔╝██║██║   ██║██║   ██║██║╚██╗██║╚██╗ ██╔╝██╔══╝  ██║██║
+██║ ╚═╝ ██║╚██████╔╝╚██████╔╝██║ ╚████║ ╚████╔╝ ███████╗██║███████╗
+╚═╝     ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝  ╚═══╝  ╚══════╝╚═╝╚══════╝
 
-Log out and back in to start Moonveil.
+        Installation Complete! 🌙
+
+        Welcome to Moonveil
 
 EOF
 echo -e "${RESET}"
