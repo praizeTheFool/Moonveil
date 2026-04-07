@@ -62,10 +62,12 @@ Rectangle {
                         Layout.preferredHeight: width
                     }
 
-                    StyledRect {
-                        variant: "pane"
+                    WeatherWidget {
                         Layout.fillWidth: true
-                        Layout.preferredHeight: 150
+                        Layout.preferredHeight: 160
+                        radius: Styling.radius(4)
+                        showDebugControls: false
+                        animationsEnabled: visible
                     }
                 }
             }

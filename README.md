@@ -74,7 +74,7 @@ curl -L get.roderic.me/moonveil | sh
 - [x] Customizable keybindings
 - [ ] Clipboard manager
 - [ ] Emoji picker
-- [ ] Dashboard widget
+- [x] Dashboard widget
 
 -----
 
